@@ -1,0 +1,351 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* Estilos generales */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url("/IMAGENES/peakpx.jpg");
+    color: #333;
+    min-height: 100vh;
+}
+
+/* Contenedor principal */
+.container {
+    max-width: 1500px;
+    margin: 50px auto;
+    background-color: #ffffffc6;
+    padding: 50px;
+    border-radius: 12px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+}
+
+/* Barra de navegación */
+.barranav {
+    margin-bottom: 30px;
+}
+
+.barranav ul {
+    font-size: 1.4rem;
+    display: flex;
+    color: #14191e;
+    list-style: none;
+    gap: 15px;
+}
+.barranav a {
+    background-color: none;
+    color: #14191e;
+    text-decoration: none;
+    padding: 10px 18px;
+    border-radius: 6px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    display: inline-block;
+    transition: background-color 0.3s ease, 
+                transform 0.2s ease, 
+                box-shadow 0.2s ease;
+}
+/* Efecto hover botón */
+.barranav a:hover {
+    background-color: #910306;
+    color: #ffffff;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+/* Encabezado */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+
+header h1 {
+    font-size: 2.5rem;
+    color: #14191e;
+}
+
+header p {
+    font-size: 1.3rem;
+    color: #51585e;
+    margin-top: 8px;
+}
+header figure {
+    margin-top: 15px;
+    display: flex;
+    gap: 30px;
+    
+}
+/* Foto perfil */
+.foto-perfil {
+    
+    width: 250px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 3px solid #910306;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 1);
+}
+/* Secciones */
+section {
+    margin-bottom: 30px;
+}
+
+h2 {
+    font-size: 1.4rem;
+    margin-bottom: 12px;
+    color: #14191e;
+    position: relative;
+}
+
+/* Línea debajo de los títulos */
+h2::after {
+    content: "";
+    width: 100%;
+    height: 4px;
+    background-color: #910306;
+    display: block;
+    margin-top: 10px;
+    border-radius: 4px;
+}
+
+/* Texto */
+p {
+    line-height: 1.6;
+    font-size: 1rem;
+    margin-top: 8px;
+}
+
+/* Listas */
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+ul li {
+    background-color: #c3c3c2;
+    margin-bottom: 10px;
+    padding: 12px 15px;
+    border-radius: 6px;
+    border-left: 4px solid #910306;
+}
+/* PROYECTOS */
+
+.proyecto {
+    background-color: #f8f9fa;
+    border-left: 5px solid #910306;
+    padding: 20px 22px;
+    margin-bottom: 22px;
+    border-radius: 8px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Hover sobre cada proyecto */
+.proyecto:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+/* Título del proyecto */
+.proyecto h3 {
+    font-size: 1.1rem;
+    color: #2c3e50;
+    margin-bottom: 8px;
+}
+
+/* Descripción */
+.proyecto p {
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Imagen del proyecto 1*/
+.proyecto figure.proyecto-imagen1 img {
+    
+    width: 100%; 
+    max-width: 1000px; 
+    height: auto; 
+    display: block; 
+    margin: 12px 0;
+    border-radius: 8px; 
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08); 
+}
+
+/* Imagen del proyecto 2*/
+.proyecto figure.proyecto-imagen2 img {
+    
+    width: 100%; 
+    max-width: 500px; 
+    height: auto; 
+    display: block; 
+    margin: 12px 0;
+    border-radius: 8px; 
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08); 
+}
+
+/* Imagen del proyecto 3*/
+.proyecto figure.proyecto-imagen3 img {
+    
+    width: 100%; 
+    max-width: 600px; 
+    height: auto; 
+    display: block; 
+    margin: 12px 0;
+    border-radius: 8px; 
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08); 
+}
+
+/* Botón de acceder a los proyectos*/
+.btn-detalles {
+    display: inline-block;
+    background-color: #14191e;
+    color: #ffffff;
+    padding: 10px 20px;
+    margin-top: 12px;
+    border-radius: 6px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-detalles:hover {
+    background-color: #910306;
+    transform: translateY(-2px);
+}
+
+
+
+/* CONTACTO */
+.contacto {
+    margin-top: 50px;
+}
+
+.form-contacto {
+    max-width: 600px;
+    margin-top: 25px;
+}
+
+/* Grupo de campos */
+.form-grupo {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 22px;
+}
+
+.form-grupo label {
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: #2c3e50;
+}
+
+/* Inputs y textarea */
+.form-grupo input,
+.form-grupo textarea {
+    padding: 12px 14px;
+    font-size: 1rem;
+    font-family: inherit;
+    border-radius: 6px;
+    border: 1px solid #cfd6dc;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Placeholder */
+.form-grupo input::placeholder,
+.form-grupo textarea::placeholder {
+    color: #9aa0a6;
+}
+
+/* Focus */
+.form-grupo input:focus,
+.form-grupo textarea:focus {
+    outline: none;
+    border-color: #910306;
+    box-shadow: 0 0 0 4px rgba(52, 152, 219, 0.2);
+}
+
+/* Campos inválidos */
+.form-grupo input:invalid,
+.form-grupo textarea:invalid {
+    border-color: #f3171b;
+}
+
+/* Campos válidos */
+.form-grupo input:valid,
+.form-grupo textarea:valid {
+    border-color: #2ecc71;
+}
+
+/* Botón */
+.btn-enviar {
+    background-color: #14191e;
+    color: #ffffff;
+    border: none;
+    padding: 12px 28px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 6px;
+    cursor: pointer;
+    align-self: flex-start;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Hover botón efecto */
+.btn-enviar:hover {
+    background-color: #910306;
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+/* Footer */
+footer {
+    background-color: #818180;
+    color: #ffffff;
+    text-align: center;
+    padding: 25px 20px;
+    margin-top: 50px;
+    border-top: 3px solid #910306;
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin: 0 0 10px 0;
+    font-weight: 500;
+}
+
+footer .redes-footer {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+footer .redes-footer a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 8px 14px;
+    border-radius: 6px;
+    background-color: #14191e;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+footer .redes-footer a:hover {
+    background-color: #910306;
+    transform: translateY(-2px);
+}
+
+footer small {
+    display: block;
+    margin-top: 8px;
+    color: #bdc3c7;
+    font-size: 0.8rem;
+}
+
